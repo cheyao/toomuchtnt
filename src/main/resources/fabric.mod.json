@@ -3,15 +3,15 @@
 	"id": "too-much-tnt-revived",
 	"version": "${version}",
 	"name": "Too Much TNT Revived",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A revival of the mod that adds 52 TNTs, dynamites, and two ores. Blow stuff up again!",
 	"authors": [
-		"Me!"
+		"Cyao (cheyao)"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/cheyao/toomuchtnt",
+		"sources": "https://github.com/cheyao/toomuchtnt"
 	},
-	"license": "CC0-1.0",
+	"license": "ZLIB",
 	"icon": "assets/too-much-tnt-revived/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -27,11 +27,11 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.16.7",
-		"minecraft": "~1.21.3",
+		"minecraft": ">=1.21.2",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"another-mod": "JEI"
 	}
 }

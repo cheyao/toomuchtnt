@@ -1,0 +1,9 @@
+{
+    "block.too-much-tnt-revived.tnt_x5": "TNTx5",
+    "block.too-much-tnt-revived.tnt_x20": "TNTx20",
+    "block.too-much-tnt-revived.tnt_x100": "TNTx100",
+    "block.too-much-tnt-revived.tnt_x500": "TNTx500",
+
+    "itemGroup.dynamite": "Dynamite",
+    "itemGroup.tnt": "TNT"
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "too-much-tnt-revived:blocks/tnt_x20_bottom",
+	    "top": "too-much-tnt-revived:blocks/tnt_x20_top",
+        "side": "too-much-tnt-revived:blocks/tnt_x20"
+    }
+}

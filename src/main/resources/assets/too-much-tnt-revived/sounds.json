@@ -1,0 +1,13 @@
+{
+  "impact":
+    {
+        "category": "weather",
+        "sounds":
+        [
+            {
+            "name": "too-much-tnt-revived:impact",
+            "stream": false
+            }
+        ]
+    }
+}
