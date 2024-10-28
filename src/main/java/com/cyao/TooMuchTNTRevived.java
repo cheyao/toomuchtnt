@@ -2,10 +2,6 @@ package com.cyao;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.TntBlock;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.SoundEvent;
@@ -29,6 +25,7 @@ public class TooMuchTNTRevived implements ModInitializer {
 		EntityManager.initialize();
 
 		CustomBlocks.initialize();
+
 		LOGGER.info("Finished Initialization");
 	}
 }

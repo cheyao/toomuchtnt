@@ -1,10 +1,10 @@
-package com.cyao.tnt;
+package com.cyao.tnt.block;
 
+import com.cyao.tnt.entity.TNTx5Entity;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.TntEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.item.Item;
@@ -62,7 +62,7 @@ public class TNTx5 extends Block {
 
     @Override
     public void onDestroyedByExplosion(ServerWorld world, BlockPos pos, Explosion explosion) {
-        TntEntity tntEntity = new TntEntity(world, (double)pos.getX() + 0.5, (double)pos.getY(), (double)pos.getZ() + 0.5, explosion.getCausingEntity());
+        TNTx5Entity tntEntity = new TNTx5Entity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, explosion.getCausingEntity());
         int i = tntEntity.getFuse();
         tntEntity.setFuse((short)(world.random.nextInt(i / 4) + i / 8));
         world.spawnEntity(tntEntity);
@@ -74,7 +74,7 @@ public class TNTx5 extends Block {
 
     private static void primeTnt(World world, BlockPos pos, @Nullable LivingEntity igniter) {
         if (!world.isClient) {
-            TNTx5Entity tntEntity = new TNTx5Entity(world, (double)pos.getX() + 0.5, (double)pos.getY(), (double)pos.getZ() + 0.5, igniter);
+            TNTx5Entity tntEntity = new TNTx5Entity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, igniter);
             world.spawnEntity(tntEntity);
             world.playSound(null, tntEntity.getX(), tntEntity.getY(), tntEntity.getZ(), SoundEvents.ENTITY_TNT_PRIMED, SoundCategory.BLOCKS, 1.0F, 1.0F);
             world.emitGameEvent(igniter, GameEvent.PRIME_FUSE, pos);

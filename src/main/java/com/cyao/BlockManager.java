@@ -21,7 +21,7 @@ public class BlockManager {
             .build();
     public static final RegistryKey<ItemGroup> TNT_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(TooMuchTNTRevived.MOD_ID, "dynamite_group"));
     public static final ItemGroup TNT_ITEM_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(Items.TNT))
+            .icon(() -> new ItemStack(Items.DIAMOND_HOE))
             .displayName(Text.translatable("itemGroup.dynamite"))
             .build();
 

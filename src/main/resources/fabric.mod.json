@@ -18,6 +18,9 @@
 		"main": [
 			"com.cyao.TooMuchTNTRevived"
 		],
+		"client": [
+			"com.cyao.TooMuchTNTRevivedClient"
+		],
 		"fabric-datagen": [
 			"com.cyao.TooMuchTNTRevivedDataGenerator"
 		]

@@ -1,6 +1,6 @@
 package com.cyao;
 
-import com.cyao.tnt.TNTx5;
+import com.cyao.tnt.block.TNTx5;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
